@@ -12,7 +12,7 @@ class App extends Component {
     super();
 
     this.state = {
-      problemName: "TP-4 SDA 2019",
+      problemName: "TP-1 SDA 2020",
       code: "",
       buttonDisabled: false,
       data: [],
@@ -163,10 +163,7 @@ class App extends Component {
                
                 </button>
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <button className="dropdown-item" onClick={() => this.setState({ problemName: "TP-1 SDA 2019"})}>TP-1 SDA 2019</button>
-                  <button className="dropdown-item" onClick={() => this.setState({ problemName: "TP-2 SDA 2019"})}>TP-2 SDA 2019</button>
-                  <button className="dropdown-item" onClick={() => this.setState({ problemName: "TP-3 SDA 2019"})}>TP-3 SDA 2019</button>
-                  <button className="dropdown-item" onClick={() => this.setState({ problemName: "TP-4 SDA 2019"})}>TP-4 SDA 2019</button>
+                  <button className="dropdown-item" onClick={() => this.setState({ problemName: "TP-1 SDA 2020"})}>TP-1 SDA 2020</button>
                 </div>
               </div>
             </div>
@@ -185,7 +182,7 @@ class App extends Component {
             </div>
             <div className="row bottom">
               <div className="col-md-6 text-left">
-                <a className="tc-link" href="https://github.com/darklordace/alghijudge-api/tree/master/static">Test Cases</a>
+                <a className="tc-link" href="https://github.com/prajnapras19/alghijudge-api/tree/master/static">Test Cases</a>
               </div>
               <div className="col-md-6 text-right">
                 {
