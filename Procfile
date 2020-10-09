@@ -1,1 +1,1 @@
-web: REACT_APP_API_URL=https://alghijudgeapi.herokuapp.com npm start
+web: REACT_APP_API_URL=https://alghijudgeapi-2020.herokuapp.com npm start
