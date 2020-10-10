@@ -164,6 +164,7 @@ class App extends Component {
                 </button>
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <button className="dropdown-item" onClick={() => this.setState({ problemName: "TP-1 SDA 2020"})}>TP-1 SDA 2020</button>
+                  <button className="dropdown-item" onClick={() => this.setState({ problemName: "TP-1 SDA 2019"})}>TP-1 SDA 2019</button>
                 </div>
               </div>
             </div>
