@@ -6,6 +6,7 @@ import AceEditor from 'react-ace';
 import 'brace/mode/java';
 import 'brace/theme/dracula';
 
+const filesize = require('filesize') 
 class App extends Component {
 
   constructor() {
@@ -107,12 +108,17 @@ class App extends Component {
           </div>
           <div className="row">
             <div className="col">
-              {
-                value.isAccepted === "AC" ?
-                  <h4>Status: <span style={{ color: "#a3ffa3" }}>AC</span></h4>
-                :
-                  <h4>Status: <span style={{ color: "#fa7979" }}>{value.isAccepted}</span></h4>
-              }
+              <div className="d-flex justify-content-between align-items-end">              
+                {
+                  value.isAccepted === "AC" ?
+                    <h4>Status: <span style={{ color: "#a3ffa3" }}>AC</span></h4>
+                  :
+                    <h4>Status: <span style={{ color: "#fa7979" }}>{value.isAccepted}</span></h4>
+                }
+                <span className="text-right">
+                  { value.runningTime/1000000 }s { filesize(value.memoryUsage) }
+                </span>
+              </div>
               {
                 this.state.showIO[idx] ?
                 <button type="button" className="btn btn-dark show-btn w-100" onClick={() => this.toggleIO(idx)}>
@@ -123,7 +129,7 @@ class App extends Component {
                   Show Input/Output
                 </button>
               }
-            </div>
+            </div>            
           </div>
           {
             this.state.showIO[idx] ?
