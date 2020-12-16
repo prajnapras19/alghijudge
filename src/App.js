@@ -13,7 +13,7 @@ class App extends Component {
     super();
 
     this.state = {
-      problemName: "TP-2 SDA 2020",
+      problemName: "LAB-4 SDA 2020",
       code: "",
       buttonDisabled: false,
       data: [],
@@ -169,6 +169,7 @@ class App extends Component {
                
                 </button>
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <button className="dropdown-item" onClick={() => this.setState({ problemName: "LAB-3 SDA 2020"})}>LAB-4 SDA 2020</button>
                   <button className="dropdown-item" onClick={() => this.setState({ problemName: "TP-2 SDA 2020"})}>TP-2 SDA 2020</button>
                   <button className="dropdown-item" onClick={() => this.setState({ problemName: "LAB-3 SDA 2020"})}>LAB-3 SDA 2020</button>
                   <button className="dropdown-item" onClick={() => this.setState({ problemName: "LAB-2 SDA 2020"})}>LAB-2 SDA 2020</button>
